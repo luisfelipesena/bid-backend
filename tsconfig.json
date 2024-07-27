@@ -14,6 +14,10 @@
 		"module": "preserve", // Permite a seleção de módulos ser decidida pelo nosso compilador
 		"lib": [
 			"es2022" // Normalmente acompanha o 'target'
-		]
+		],
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		}
 	}
 }
