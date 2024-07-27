@@ -1,0 +1,20 @@
+// https://www.totaltypescript.com/tsconfig-cheat-sheet
+{
+	"compilerOptions": {
+		"esModuleInterop": true, // Suporte ao CommonJS (require -> import)
+		"skipLibCheck": true, // Ignora checagem de libs (performance)
+		"target": "es2022", // Alvo da compilação, no caso seria a versão mais atualizada que o Node.js suporta
+		"allowJs": true, // Permite arquivos .js
+		"resolveJsonModule": true, // Permite importar .json
+		"moduleDetection": "force", // Evita alguns errinhos chatos do TS
+		"isolatedModules": true, // Evita alguns errinhos chatos do TS
+		"verbatimModuleSyntax": true, // Obriga tipos a serem importados como "import type", o que melhora o código compilado
+		"strict": true, // Checagem de tipos
+		"noUncheckedIndexedAccess": true, // Todo acesso a uma array pode retornar undefined
+		"noImplicitOverride": true, // Obriga overrides a serem explícitos
+		"module": "preserve", // Permite a seleção de módulos ser decidida pelo nosso compilador
+		"lib": [
+			"es2022" // Normalmente acompanha o 'target'
+		]
+	}
+}
